@@ -238,6 +238,27 @@
         &copy; 2026 AI 音樂影片創作課程作業繳交平台. All rights reserved.
     </footer>
 
+    <!-- Floating Google Sheets Button (左下角固定浮動按鈕) -->
+    <a href="https://docs.google.com/spreadsheets/d/1s_gVOgvxybiylsbZyLKv-nkpCv0xDpMSdQskE3jjJmE/edit?usp=sharing" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="開啟作業繳交紀錄 Google 試算表"
+       class="fixed bottom-5 left-5 sm:bottom-7 sm:left-7 z-40 group flex items-center gap-2.5 bg-gradient-to-br from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 active:scale-95">
+        <!-- 可愛 Google 試算表 SVG 圖示 -->
+        <div class="bg-white/20 p-1.5 rounded-xl backdrop-blur-xs transition-transform duration-300 group-hover:rotate-12">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2.5L17.5 9H13V4.5zM7 13h4v2H7v-2zm0 4h4v2H7v-2zm6-4h4v2h-4v-2zm0 4h4v2h-4v-2z"/>
+            </svg>
+        </div>
+        <!-- 電腦版顯示文字標籤，手機版僅顯示可愛圓形圖示避免遮擋 -->
+        <span class="hidden sm:inline-block text-sm font-bold tracking-wide pr-1">查看繳交紀錄</span>
+        <!-- 可愛動態小提示點 -->
+        <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-lime-400 border-2 border-white"></span>
+        </span>
+    </a>
+
     <!-- Toast Notification Box -->
     <div id="toast-box" class="fixed bottom-5 right-5 bg-slate-800 text-white px-5 py-3 rounded-2xl shadow-xl text-sm font-medium transform translate-y-20 opacity-0 transition-all duration-300 z-50">
         提示訊息
